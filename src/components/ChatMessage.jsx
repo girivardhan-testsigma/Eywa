@@ -8,7 +8,7 @@ const ChatMessage = ({ role, content }) => {
         {isUser ? (
           <img src="/user_profile.png" alt="User" />
         ) : (
-          <img src="/bot_profile.png" alt="Bot" />
+          <img src="/testsigma_logo.jpeg" alt="Bot" />
         )}
       </div>
       <div className="message-content">{content}</div>
