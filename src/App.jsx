@@ -27,13 +27,13 @@ const App = () => {
 
   const fetchBotResponse = async (userInput) => {
     try {
-      const response = await fetch("http://localhost:5000/chat", {
+      const response = await fetch("http://127.0.0.1:5000/api/question", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ input: userInput }),
+        body: JSON.stringify({ question: userInput, session_id: "sohith" }),
       });
       const data = await response.json();
-      return data.reply || "Sorry, something went wrong!";
+      return data.response || "Sorry, something went wrong!";
     } catch (error) {
       console.error(error);
       return "Error: Unable to fetch response.";
