@@ -50,7 +50,6 @@ const App = () => {
     <div className="app-container">
       <div className="company-info">
         <img src="https://website-static.testsigma.com/website-next/nextjs/07dc65/images/v2/common/testsigma-logo-v3-dark.svg" alt="Company Logo" className="company-logo" />
-        <h1 className="company-title">Company Name</h1>
         <h2 className="bot-title">Eywa</h2>
       </div>
       <div className="chat-box">

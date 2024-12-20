@@ -6,7 +6,7 @@ const ChatMessage = ({ role, content }) => {
     <div className={`message ${isUser ? "user-message" : "bot-message"}`}>
       <div className="avatar">
         {isUser ? (
-          <img src="/bot_profile.png" alt="User" />
+          <img src="/user_profile.png" alt="User" />
         ) : (
           <img src="/bot_profile.png" alt="Bot" />
         )}

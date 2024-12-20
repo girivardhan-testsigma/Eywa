@@ -22,7 +22,7 @@ body {
   }
   
   .company-logo {
-    width: 100px;
+    width: 300px;
     height: auto;
   }
   
@@ -34,8 +34,20 @@ body {
   .bot-title {
     font-size: 20px;
     margin-top: 5px;
-    color: #555;
+    
+    color: linear-gradient(to right, #34d399, #11e9ec);
+
+    border-radius: 15px 15px 15px 0;
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, #34d399, #11e9ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
+
   
   /* Chat box styles */
   .chat-box {
