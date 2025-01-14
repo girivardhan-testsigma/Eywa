@@ -27,15 +27,18 @@ const App = () => {
 
   const fetchBotResponse = async (userInput) => {
     try {
+      console.log("Sending request to backend...");
       const response = await fetch("http://127.0.0.1:5000/api/question", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: userInput, session_id: "sohith" }),
       });
+      console.log("Received response from backend...");
       const data = await response.json();
+      console.log("Response data:", data);
       return data.response || "Sorry, something went wrong!";
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching response:", error);
       return "Error: Unable to fetch response.";
     }
   };
